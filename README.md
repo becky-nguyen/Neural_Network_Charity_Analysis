@@ -11,8 +11,14 @@ Application information includes identification columns, application type, their
 * The unique identifying variables such as EIN and Name should be removed from the input data. They are not targets or features that would help the model as they are all unique data points that do not have anything to do with success/failure of funding.
 
 ### Compiling, Training, and Evaluating the Model
+![Capture1](https://user-images.githubusercontent.com/100896787/183796601-611fbb8f-d11c-40a0-802a-0bfd0190e45b.PNG)
 * In our optimized model, we have two hidden layers that use 8 and 5 neurons. 
+
+![Capture2](https://user-images.githubusercontent.com/100896787/183796611-a0d641b4-a317-4eae-b0b9-069a1367f821.PNG)
+![Capture3](https://user-images.githubusercontent.com/100896787/183796617-1838b999-718d-4091-af2d-ad0dcde2b020.PNG)
 * After more data preprocessing, we were able to achieve a target model performance of 82.35% (a big achievement from the previous 18.60%).
+
+![Capture4](https://user-images.githubusercontent.com/100896787/183796660-0dfa285f-fee6-4045-9b73-fa0fa9bece86.PNG)
 * To increase model performance, we looked again at the features. Noticing that the ask amounts were showing 8,747 unique values, I binned the values into groups of 5k, 5-10k, 10-25k, 25-50k, 50-100k, 100-500k, 500k-1M, 1M-5M, and over 5M. By doing so, we reduced the unique values down to 9. We kept all the other preprocessing procedures from the original model, as well as the neuonsz, layers, and activation functions and saw that we were able to increase our accuracy rate above the required 75%. 
 
 ## Summary
